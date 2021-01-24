@@ -23,7 +23,7 @@ pipeline{
            }
        }
        stage('Package'){
-           agent {label 'Linux_Slav2'}
+           agent {label 'Linux_slave2'}
            steps{
                git 'https://github.com/Gopi757/game-of-life.git'
                sh 'mvn package'
